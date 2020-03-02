@@ -23,6 +23,18 @@ Follow the instructions to install [https://www.npmjs.com/package/react-native-g
 
 ## Usage
 
+### `<UEATRestaurant />
+
+Props:
+
+- apiKey: Your restaurant API key
+- culture (string): Your user culture (possible values: fr-CA, en-CA, en-US, en-UK, es-ES)
+- renderLoading (ReactNode): Display a loading spinner while the page is loading
+- renderError ((retry) => ReactNode): Display an error message and a button to retry
+- onLeave (function): Go back to the application
+
+## Example
+
 ```jsx
 import React from 'react';
 import {
@@ -70,6 +82,4 @@ const styles = StyleSheet.create({
 export default App;
 ```
 
-## Example
-
-See our [Mr. Burger example](https://github.com/UEAT/react-native-ueat/tree/master/examples/MrBurger).
+[Go see the full example](https://github.com/UEAT/react-native-ueat/tree/master/examples/MrBurger).
