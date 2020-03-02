@@ -5,18 +5,11 @@
 Install UEAT and it's dependencies:
 
 ```sh
-yarn add react-native-ueat
+yarn add react-native-ueat @react-native-community/async-storage react-native-device-info react-native-webview react-native-geolocation-service
 
-yarn add @react-native-community/async-storage
 react-native link @react-native-community/async-storage
-
-yarn add react-native-device-info
 react-native link react-native-device-info
-
-yarn add react-native-webview
 react-native link react-native-webview
-
-yarn add react-native-geolocation-service
 ```
 
 Follow the instructions to install [react-native-geolocation-service README](https://www.npmjs.com/package/react-native-geolocation-service)
