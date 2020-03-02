@@ -12,7 +12,7 @@ react-native link react-native-device-info
 react-native link react-native-webview
 ```
 
-Follow the instructions to install [react-native-geolocation-service README](https://www.npmjs.com/package/react-native-geolocation-service)
+Follow the instructions to install [react-native-geolocation-service](https://www.npmjs.com/package/react-native-geolocation-service)
 
 ## Usage
 
