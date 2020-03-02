@@ -5,7 +5,7 @@ import DeviceInfo from 'react-native-device-info';
 import { generateRestaurantURL } from './utils/uri';
 import NativeService from './services/NativeService';
 import { NativeWebView } from './types';
-import { StyleSheet, View, SafeAreaView } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import LoadingService from './services/LoadingService';
 import LeaveService from './services/LeaveService';
 
@@ -71,7 +71,7 @@ function UEATRestaurant({
   const uri = generateRestaurantURL({ apiKey, culture, isMarketplace });
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <WebView
         userAgent={userAgent}
         bounces={false}
@@ -89,7 +89,7 @@ function UEATRestaurant({
       {error && !!renderError && (
         <View style={styles.spinner}>{renderError(retry)}</View>
       )}
-    </SafeAreaView>
+    </View>
   );
 }
 

@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "main": "cjs/index.js",
   "module": "es6/index.js",
-  "repository": "git@github.com:UEAT/ueat-react-native.git",
+  "repository": "git@github.com:UEAT/react-native-ueat.git",
   "author": "Benoit Tremblay <btremblay@ueat.io>",
   "license": "MIT",
   "files": [
