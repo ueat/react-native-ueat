@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "jsx": "react",
+    "lib": ["es2015"],
+    "module": "es6",
+    "moduleResolution": "node",
+    "outDir": "./es6",
+    "target": "es5",
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "files": ["./src/index.ts"]
+}

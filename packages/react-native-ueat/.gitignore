@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+*.log
+yarn.lock
+
+/es6
+/cjs
+
+old_reference.tsx
