@@ -20,7 +20,8 @@ Follow the instructions to install [react-native-geolocation-service](https://ww
 
 Props:
 
-- apiKey: Your restaurant API key
+- apiKey (string): Your restaurant API key
+- isMarketplace (boolean): Is this restaurant a marketplace or a regular restaurant?
 - culture (string): Your user culture (possible values: fr-CA, en-CA, en-US, en-UK, es-ES)
 - renderLoading (ReactNode): Display a loading spinner while the page is loading
 - renderError ((retry) => ReactNode): Display an error message and a button to retry
