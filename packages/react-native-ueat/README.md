@@ -19,11 +19,11 @@ react-native link react-native-webview
 yarn add react-native-geolocation-service
 ```
 
-Follow the instructions to install [https://www.npmjs.com/package/react-native-geolocation-service](react-native-geolocation-service README)
+Follow the instructions to install [react-native-geolocation-service README](https://www.npmjs.com/package/react-native-geolocation-service)
 
 ## Usage
 
-### `<UEATRestaurant />
+### `<UEATRestaurant />`
 
 Props:
 
