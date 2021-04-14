@@ -46,6 +46,8 @@ export default class LocationService extends BaseService {
       return await PermissionsAndroid.request(
         PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION
       );
+    } else if (Platform.OS === 'ios') {
+      return await Geolocation.requestAuthorization('whenInUse')
     } else {
       return true;
     }
