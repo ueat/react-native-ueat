@@ -18,7 +18,10 @@ interface Props {
   onLeave?: () => void;
 }
 
-const userAgent = `${DeviceInfo.getUserAgent()} - UEAT Native App - ${DeviceInfo.getBundleId()} - ${DeviceInfo.getVersion()}`;
+let deviceUserAgent = 'Unknown';
+DeviceInfo.getUserAgent()
+  .then(userAgent => (deviceUserAgent = userAgent))
+  .catch(() => (deviceUserAgent = 'Unknown'));
 
 function UEATRestaurant({
   apiKey,
@@ -73,7 +76,7 @@ function UEATRestaurant({
   return (
     <View style={styles.container}>
       <WebView
-        userAgent={userAgent}
+        userAgent={`${deviceUserAgent} - UEAT Native App - ${DeviceInfo.getBundleId()} - ${DeviceInfo.getVersion()}`}
         bounces={false}
         originWhitelist={['*']}
         source={{ uri }}
