@@ -16,7 +16,7 @@
     "react-native-device-info": "^5.5.3",
     "react-native-geolocation-service": "^4.0.0",
     "react-native-ueat": "file:../../packages/react-native-ueat",
-    "react-native-webview": "^8.1.2"
+    "react-native-webview": "^11.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
